@@ -4,7 +4,10 @@ export default function App() {
   return (
     <SafeAreaView>
       <View className="mt-6 mx-2.5">
-        <Text className="text-3xl" style={{ fontFamily: "WorkSans-Black" }}>
+        <Text
+          className="text-3xl text-primary"
+          style={{ fontFamily: "WorkSans-Black" }}
+        >
           Hello World
         </Text>
 
