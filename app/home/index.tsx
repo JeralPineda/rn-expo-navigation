@@ -1,18 +1,21 @@
-import { CustomButtom } from "@/components/shared/custom-button";
-import { Link, router } from "expo-router";
 import { SafeAreaView, Text, View } from "react-native";
+import { Link, router } from "expo-router";
+import { CustomButton } from "@/components/shared/custom-button";
 
 export default function Home() {
   return (
     <SafeAreaView>
       <View className="px-10 mt-5">
         <Link href="/products" asChild>
-          <CustomButtom color="primary">Productos</CustomButtom>
+          <CustomButton color="primary">Productos</CustomButton>
         </Link>
 
-        <CustomButtom color="primary" onPress={() => router.push("/products")}>
+        <CustomButton
+          variant="text-only"
+          onPress={() => router.push("/products")}
+        >
           Hola mundo
-        </CustomButtom>
+        </CustomButton>
 
         {/* <Text className="text-5xl font-bold mb-2">Home</Text> */}
         {/* <Link href="/products">Productos</Link> */}
