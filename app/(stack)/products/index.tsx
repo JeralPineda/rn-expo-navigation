@@ -1,14 +1,27 @@
+import { products } from "@/store/products.store";
 import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { FlatList, Text, View } from "react-native";
 
 export default function Products() {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text className="text-5xl font-bold mb-2">Productos</Text>
+    <View className="flex flex-1 px-4">
+      <FlatList
+        data={products}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => (
+          <View className="mt-10">
+            <Text className="text-2xl font-bold">{item.title}</Text>
+            <Text className="">{item.description}</Text>
 
-      <Link href="/profile">Perfil</Link>
-      <Link href="/home">Home</Link>
-      <Link href="/settings">Settings</Link>
+            <View className="flex flex-row justify-between mt-2">
+              <Text className="font-bold">${item.price}</Text>
+              <Link href={`/products/${item.id}`} className="text-primary">
+                Ver detalles
+              </Link>
+            </View>
+          </View>
+        )}
+      />
     </View>
   );
 }
