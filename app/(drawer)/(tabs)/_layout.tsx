@@ -6,12 +6,13 @@ export default function TabsLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "indigo",
-        headerShown: false,
+        // headerShown: false,
       }}
     >
       <Tabs.Screen
         name="(stack)"
         options={{
+          headerShown: false,
           title: "Stack",
           tabBarIcon: ({ color }) => (
             <Ionicons size={22} name="apps-outline" color={color} />
