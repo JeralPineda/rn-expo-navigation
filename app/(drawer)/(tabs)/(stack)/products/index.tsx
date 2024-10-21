@@ -15,10 +15,7 @@ export default function Products() {
 
             <View className="flex flex-row justify-between mt-2">
               <Text className="font-bold">${item.price}</Text>
-              <Link
-                href={`/drawer/tabs/products/${item.id}`}
-                className="text-primary"
-              >
+              <Link href={`/products/${item.id}`} className="text-primary">
                 Ver detalles
               </Link>
             </View>

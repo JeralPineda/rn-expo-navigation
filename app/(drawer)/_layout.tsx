@@ -17,7 +17,7 @@ export default function DrawerLayout() {
       }}
     >
       <Drawer.Screen
-        name="tabs"
+        name="(tabs)"
         options={{
           title: "Tabs + Stack",
           drawerLabel: "Tabs + Stack",
