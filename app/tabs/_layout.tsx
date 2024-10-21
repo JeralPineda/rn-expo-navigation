@@ -14,7 +14,7 @@ export default function TabsLayout() {
         options={{
           title: "Stack",
           tabBarIcon: ({ color }) => (
-            <Ionicons size={28} name="apps-outline" color={color} />
+            <Ionicons size={22} name="apps-outline" color={color} />
           ),
         }}
       />
@@ -23,7 +23,7 @@ export default function TabsLayout() {
         options={{
           title: "Home",
           tabBarIcon: ({ color }) => (
-            <Ionicons size={28} name="home-outline" color={color} />
+            <Ionicons size={22} name="home-outline" color={color} />
           ),
         }}
       />
@@ -32,7 +32,7 @@ export default function TabsLayout() {
         options={{
           title: "Favoritos",
           tabBarIcon: ({ color }) => (
-            <Ionicons size={28} name="star-outline" color={color} />
+            <Ionicons size={22} name="star-outline" color={color} />
           ),
         }}
       />
